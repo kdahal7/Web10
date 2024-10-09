@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feuhrer</title>
+        <link rel="icon" href="/Employees icon/6818210.png">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color:#CEEFF2;
+            }
+            header , footer{
+                background-color:#395c60;
+                color:aliceblue;
+                text-align:center;
+                padding:2px;
+            }
 
+            .navitem{
+                display: inline;
+                padding:20px;
+            }
+
+            .navitem a{
+                text-decoration:none;
+                color: white;
+            }
+
+            .registerform{
+                width:max-content;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .Directory{
+                text-align:center;
+                margin-right:auto;
+                margin-left:auto;
+
+            }
+
+            table{
+                width:100%;
+                border-collapse:collapse;
+            
+            }
+
+            th,td{
+                border:1px solid #395c60;
+                padding:8px;
+            }
+
+            .contactus{
+                text-align:center;                      
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to our HR Portal</h1>
+            <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration" >Employee-Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee-Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact-Us</a></li>
+            </ul>
+            </nav>
+
+        </header>
+        <img src="/Image/people-in-business-office-flat-vector-illustration-cartoon-woman-colleague-group-of-characters-talk-on-break-office-workers-communicate-using-laptop-smartphone-business-communication-background-2CB8FHN-transformed.jpeg" style="width:100%;">
+        <!--section ka kaam hota hai uss link par pahucha dega mtlb employee registration par click karenge toh employee registration wala cheez open hojayega-->
+        <section id="employee-registration" class="registerform">
+            <h2>Employee Registration</h2>
+            <p>Fill the Form below to get Register as <i>Employee</i></p>
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your Name"><br>
+                <br><label for="email">Email Address: </label>
+                <input type="email" id="email" placeholder="Enter your Email ID"><br>
+                <br><label for="pwd">Password: </label>
+                <input type="password" id="pwd"><br>
+                <br><label for="age">Age: </label>
+                <input type="number" id="age" placeholder="Enter your Age"><br>
+                <br><label for="role">Select role: </label>
+                <select value="role">
+                    <option value="senior-manager">Senior Manager</option>
+                    <option value="hr-representative">HR representative</option>
+                    <option value="Software-Engineer">Software Engineer</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Junior-Developer">Junior Developer</option>
+                </select><br>
+                <br><label for="joiningdate">Joining Date: </label>
+                <input type="date" id="joiningdate">
+                <br><br><input type="submit">
+            </form>
+
+        </section>
+
+        <section id="employee-directory" class="Directory">
+            <h2>Employee Directory</h2>
+            <p>Welcome to Employee Directory</p>
+            <table border="">
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Employee Role</th>
+                </tr>
+                <tr>
+                    <td>6226</td>
+                    <td>Rajeshwar</td>
+                    <td>Designer</td>
+                </tr>
+                <tr>
+                    <td>6308</td>
+                    <td>Samriddh</td>
+                    <td>HR Representative</td>
+                </tr>
+                <tr>
+                    <td>6379</td>
+                    <td>Aditya</td>
+                    <td>Software Developer</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact-us" class="contactus">
+            <h2>Contact Us</h2>
+            <p>You can contact us on feuhrer@email.com or visit us between 9AM - 6PM</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25713.748550347787!2d88.328084942351!3d22.512618402216212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277542b354a11%3A0x26ff2f1b4cc8b239!2sAlipore%20Museum!5e0!3m2!1sen!2sin!4v1715153100298!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer>
+            <h3>&copy; 2024 Feuhrer Animation Studio</h3>
+        </footer>
+    </body>
+</html>
